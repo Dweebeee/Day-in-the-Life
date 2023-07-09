@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7acf5bd7810987744a7c6882bbe61b0c
+guid: 3667ec2eade41de45b1a484ebec2f08f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carapte_0
+      name: wet garden_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,13 +119,13 @@ TextureImporter:
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 11, y: 9, z: 11, w: 9}
+      border: {x: 3, y: 3, z: 3, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84e6740493cd754caa91a7fb2fd6e06
-      internalID: 1311584048
+      spriteID: da9100f099cf00a44b6362c840e71158
+      internalID: -1855792
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      carapte_0: 1311584048
+      wet garden_0: -1855792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

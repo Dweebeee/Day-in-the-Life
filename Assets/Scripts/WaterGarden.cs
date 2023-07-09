@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUp : MonoBehaviour
+public class WaterGarden : MonoBehaviour
 {
-    public SpriteRenderer srCanPlayer;
-    public GameObject WateringCan;
     private bool interactable = false;
-    public WaterGarden waterGarden1;
-    public WaterGarden waterGarden2;
-    public WaterGarden waterGarden3;
-
-    public int waterAmountIndex;
+    public bool wateringCan;
+    public Sprite bushWatered;
+    public SpriteRenderer spriteRenderer;
+    public PickUp pickUp; 
     // Start is called before the first frame update
     void Start()
     {
-          
+
     }
     // When the player enters the trigger box, let them interact with it
     public void OnTriggerEnter2D(Collider2D collision)
@@ -36,22 +33,14 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (interactable && Input.GetButtonDown("Jump"))
+        if (interactable && Input.GetButtonDown("Jump") && wateringCan)
         {
             //Then pick up the item (watering can) 2 steps: remove watering can from ground. enable on player
-            WateringCan.SetActive(false);
+            spriteRenderer.sprite = bushWatered;
 
-            srCanPlayer.enabled = true;
+            //Increment the water amount index to indicate that the watering can now holds 1 part less
+            pickUp.waterAmountIndex++;
             // & then pass enable a boolean that tells the player they no hold the watering can
-            waterGarden1.wateringCan = true;
-            waterGarden2.wateringCan = true;
-            waterGarden3.wateringCan = true;
-            Debug.Log("watering can in non existent hands");
         }
-
-
-
     }
-
-
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7acf5bd7810987744a7c6882bbe61b0c
+guid: 60be314b4f006ab4899f69c427c9a75e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carapte_0
+      name: TabelTob_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 96
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 11, y: 9, z: 11, w: 9}
+      border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84e6740493cd754caa91a7fb2fd6e06
-      internalID: 1311584048
+      spriteID: 4c3fa2e239f3f574794364577dbb6020
+      internalID: -1239543829
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      carapte_0: 1311584048
+      TabelTob_0: -1239543829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

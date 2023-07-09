@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7acf5bd7810987744a7c6882bbe61b0c
+guid: 2a5c0bcad2c77cd48958192c840d423d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carapte_0
+      name: CarpetYey_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84e6740493cd754caa91a7fb2fd6e06
-      internalID: 1311584048
+      spriteID: 60216dae1a8d65247ba16b40fb18f899
+      internalID: 1094131643
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      carapte_0: 1311584048
+      CarpetYey_0: 1094131643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
