@@ -24,6 +24,7 @@ public class DialougeScript : MonoBehaviour
     public PlayerMovement playerMovement;
     public PlayerCombat playerCombat;
     public PlayerShoot playerShoot;
+    public MusicManager musicManager;
     // Start is called before the first frame update
     void Awake()
     {
@@ -84,6 +85,8 @@ public class DialougeScript : MonoBehaviour
                     }
                     else if (isKnight)
                     {
+                        // In Battle, so enable battle stuff.
+                        musicManager.StartBattleMusic();
                         playerMovement.enabled = true;
                         playerCombat.enabled = true;
                         playerShoot.enabled = true;

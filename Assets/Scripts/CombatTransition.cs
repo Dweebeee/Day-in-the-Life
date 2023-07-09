@@ -13,6 +13,7 @@ public class CombatTransition : MonoBehaviour
     public GameObject mainCamera;
     public GameObject cameraPoint;
     public PlayerMovement playerMovement;
+    public MusicManager musicManager;
 
     [SerializeField] private bool fadeOnLoad;
     [SerializeField] private float alphaStart;
@@ -49,6 +50,7 @@ public class CombatTransition : MonoBehaviour
         //player.transform.position = teleportPoint.transform.position;
         //player.transform.rotation = teleportPoint.transform.rotation;
         //mainCamera.transform.position = cameraPoint.transform.position;
+        musicManager.StopAmbientMusic();
         SceneManager.LoadScene(2);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AlarmSound : MonoBehaviour
 {
     public GameObject alarm;
+    public MusicManager musicManager;
     public AudioSource sound;
     private bool playing = true;
 
@@ -12,15 +13,13 @@ public class AlarmSound : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
-            // Need to add a UI text that comes up above the alarm saying " interact 'e' "
-
-
             if (Input.GetButton("Jump") && playing)
             {
                 Debug.Log("Alarm off");
                 sound.Stop();
-                playing= false;
+                playing = false;
+                musicManager.StopCrackleMusic(); // Assumes the music is already running.
+                musicManager.StartAmbientMusic();
             }
         }
     }

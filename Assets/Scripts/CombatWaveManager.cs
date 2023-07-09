@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CombatWaveManager : MonoBehaviour
 {
-    public List<EnemyAI> knightsAI; // TODO remove this.
+    //public List<EnemyAI> knightsAI; // TODO remove this.
     int wavesPassed = 0; // Current number of waves completed. Incremented when the last enemy in a wave is killed.
     int enemiesKilled = 0; // Number of enemies killed in the current wave. Reset to 0 when new wave is started.
     public List<int> waveEnemies; // List of the number of enemies to spawn in each wave.
@@ -53,7 +53,7 @@ public class CombatWaveManager : MonoBehaviour
             Debug.Log("Wave " + Convert.ToString(wavesPassed) + " knight " + Convert.ToString(i) + " spawned");
             //Debug.Log($"Wave {wavesPassed} knight {i} spawned.");
 
-            knightsAI[i].combat = true;
+            //knightsAI[i].combat = true;
 
             // Get a spawn location.
             int randomSpawnIndex = rnd.Next(0, 7);
