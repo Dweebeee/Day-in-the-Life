@@ -18,8 +18,8 @@ public class AlarmSound : MonoBehaviour
                 Debug.Log("Alarm off");
                 sound.Stop();
                 playing = false;
-                musicManager.StopCrackleMusic(); // Assumes the music is already running.
                 musicManager.StartAmbientMusic();
+                musicManager.StopCrackleMusic(); // Assumes the music is already running.
             }
         }
     }

@@ -50,7 +50,6 @@ public class CombatTransition : MonoBehaviour
         //player.transform.position = teleportPoint.transform.position;
         //player.transform.rotation = teleportPoint.transform.rotation;
         //mainCamera.transform.position = cameraPoint.transform.position;
-        musicManager.StopAmbientMusic();
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Scene2");
     }
 }

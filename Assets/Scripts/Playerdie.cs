@@ -21,7 +21,7 @@ public class Playerdie : MonoBehaviour
     IEnumerator Die()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Scene2");
         
     }
 

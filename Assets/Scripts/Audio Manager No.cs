@@ -68,5 +68,12 @@ public class MusicManager : MonoBehaviour
         {
             StartCrackleMusic();
         }
+        else
+        {
+            StopMenuMusic();
+            StopAmbientMusic();
+            StopBattleMusic();
+            StopCrackleMusic();
+        }
     }
 }

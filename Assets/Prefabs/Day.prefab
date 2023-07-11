@@ -400,7 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   movespeed: 3
-  combat: 0
+  combat: 1
   enemyAttack: {fileID: 793347751264662410}
   initialAttackDelay: 0.1
   attackTime: 2

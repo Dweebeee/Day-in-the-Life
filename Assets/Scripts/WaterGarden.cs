@@ -8,7 +8,8 @@ public class WaterGarden : MonoBehaviour
     public bool wateringCan;
     public Sprite bushWatered;
     public SpriteRenderer spriteRenderer;
-    public PickUp pickUp; 
+    public PickUp pickUp;
+    public GameObject invisWall;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class WaterGarden : MonoBehaviour
         {
             //Then pick up the item (watering can) 2 steps: remove watering can from ground. enable on player
             spriteRenderer.sprite = bushWatered;
+            invisWall.SetActive(false);
 
             //Increment the water amount index to indicate that the watering can now holds 1 part less
             pickUp.waterAmountIndex++;

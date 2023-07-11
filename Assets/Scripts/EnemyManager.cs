@@ -13,6 +13,8 @@ public class EnemyManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        combatWaveManager = player.GetComponent<CombatWaveManager>();
         enemyAttack.SetActive(false);
     }
 

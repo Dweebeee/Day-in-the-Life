@@ -9,7 +9,7 @@ public class CombatWaveManager : MonoBehaviour
     int wavesPassed = 0; // Current number of waves completed. Incremented when the last enemy in a wave is killed.
     int enemiesKilled = 0; // Number of enemies killed in the current wave. Reset to 0 when new wave is started.
     public List<int> waveEnemies; // List of the number of enemies to spawn in each wave.
-    public List<Vector2> enemySpawns; // List of possible places for the enemies to spawn.
+    public List<Vector3> enemySpawns; // List of possible places for the enemies to spawn.
     public List<GameObject> currentEnemies; // All the current enemies that have been created in the current wave.
     public GameObject knightPrefab; // The prefab of the knight to create.
 
@@ -36,7 +36,7 @@ public class CombatWaveManager : MonoBehaviour
         }
 
         // If we are not at the last wave listed, move on to the next wave.
-        if (wavesPassed <= waveEnemies.count)
+        if (wavesPassed <= waveEnemies.Count)
         {
             Debug.Log("Starting next wave");
             SpawnWaveEnemies();
@@ -46,7 +46,7 @@ public class CombatWaveManager : MonoBehaviour
     private void SpawnWaveEnemies()
     {
         // Set up a random class to all random knight spawn.
-        Random rnd = new Random();
+        System.Random rnd = new System.Random();
 
         for (int i = 0; i < waveEnemies[wavesPassed]; i++)
         {
@@ -56,10 +56,10 @@ public class CombatWaveManager : MonoBehaviour
             //knightsAI[i].combat = true;
 
             // Get a spawn location.
-            int randomSpawnIndex = rnd.Next(0, 7);
+            int randomSpawnIndex = rnd.Next(0, 23);
 
             // Create a new enemy.
-            currentEnemies.Add(Instantiate(knightPrefab, enemySpawns[randomSpawnIndex]));
+            currentEnemies.Add(Instantiate(knightPrefab, enemySpawns[randomSpawnIndex], Quaternion.Euler(0, 0, 0)));
 
             // Need to enable AI? If so:
             //currentEnemies[i].combat = true;

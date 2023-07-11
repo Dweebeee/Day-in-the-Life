@@ -79,6 +79,7 @@ public class DialougeScript : MonoBehaviour
                     if (isPrincess)
                     {
                         interactable = false;
+                        musicManager.StopAmbientMusic();
                         combatTransition.StartFade(0, 1);
                         PlayerForm.playingAsPrincess = true;
                         StartCoroutine(FadeIn());
